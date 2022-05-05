@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Locação</title>
+</head>
+
+<body>
+  <form id="priceform">
+    <header>
+      <h1>Controle de Locação</h1>
+      <h2>Facilita Ortopedia</h2>
+    </header>
+
+    <main>
+      <div class="pt1">
+        <p class="title">Dados do cliente:</p>
+        <label for="name">Nome:</label><br>
+        <input type="text" id="name" placeholder="Insira o nome do cliente" required><br><br>
+        <label for="cpf">CPF:</label><br>
+        <input type="number" id="cpf" placeholder="Insira o CPF do cliente" required><br><br>
+        <p>Endereço:</p>
+        <label for="adress">Rua:</label><br>
+        <input type="text" id="adress" placeholder="Insira o nome da rua" required><br><br>
+        <label for="number">Numero:</label><br>
+        <input type="number" id="number" placeholder="Insira o numero" required><br><br>
+        <label for="complement">Complemento:</label><br>
+        <input type="text" id="complement" placeholder="Ex: Bloco/Apartamento"><br><br>
+        <label for="district">Bairro:</label><br>
+        <input type="text" id="district" placeholder="Insira o bairro" required><br><br>
+        <label for="city">Cidade:</label><br>
+        <input type="text" id="city" placeholder="Insira a cidade" required>
+      </div>
+
+      <div class="pt2">
+        <p class="title">Dados do produto:</p>
+        <label for="product">Produto:</label>
+        <select id="product" required>
+          <option disabled selected>Selecione o produto</option>
+          <option value="20">Muleta canadense</option>
+          <option value="20">Muleta axilar</option>
+          <option value="30">Andador 2 barras</option>
+          <option value="30">Andador 3 barras</option>
+          <option value="40">Cadeira de banho 100kg</option>
+          <option value="40">Cadeira de banho 130kg</option>
+          <option value="40">Cadeira de rodas 100kg</option>
+          <option value="40">Cadeira de rodas 130kg</option>
+          <option value="30">Bota ortopédica P</option>
+          <option value="30">Bota ortopédica M</option>
+          <option value="30">Bota ortopédica G</option>
+          <option value="30">Bota ortopédica GG</option>
+        </select>
+        <label for="period">Periodo:</label>
+        <select id="period" required>
+          <option disabled selected>Selecione o período</option>
+          <option id="15" value="15">15 dias</option>
+          <option id="30" value="30">30 dias</option>
+        </select>
+        <label for="rental-date">Data de locação:</label>
+        <input type="date" id="rental-date" required>
+        <input type="submit" id="button" value="Gerar contrato">
+        <div id="totalprice">
+          <p>Devolução:<br><span id="return-date">00/00/00</span></p>
+          <p>Valor:<br>R$ <span id="price">0,00</span></p>
+        </div>
+      </div>
+    </main>
+  </form>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+form {
+    background-color: green;
+    width: 100%;
+    height: 100%;
+
+}
+
+header {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.pt1 {
+    background-color: rgba(57, 236, 2, 0.671);
+    border-radius: 15px;
+}
+
+.pt1 p {
+    padding: 0px 0px 10px 0px;
+
+}
+
+.pt1 input {
+    margin-top: 5px;
+    padding: 2px;
+    border-radius: 5px;
+    border-color: rgb(122, 122, 122);
+}
+
+.pt1 input:hover {
+    background-color: rgb(202, 202, 202);
+}
+
+main {
+    display: flex;
+    align-items: baseline; 
+    justify-content: center;
+}
+
+main div {
+    padding: 20px;
+    margin: 15px;
+    min-width: 20%;
+    min-height: 145px;
+}
+
+.pt2 {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(57, 236, 2, 0.671);
+    border-radius: 15px;
+}
+
+.pt2 select {
+    padding: 2px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    border-color: rgb(122, 122, 122);
+}
+
+.pt2 select:hover {
+    background-color: rgb(202, 202, 202);
+}
+
+.pt2 input {
+    padding: 2px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    border-color: rgb(122, 122, 122);
+}
+
+.pt2 input:hover {
+    background-color: rgb(202, 202, 202);
+}
+
+.pt2 p {
+    padding-bottom: 10px;
+}
+
+#button {
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: green;
+    border-color: rgb(122, 122, 122);
+    border-radius: 5px;
+}
+
+#totalprice p {
+    font-size: 25px;
+    text-align: center;
+
+    
+}
